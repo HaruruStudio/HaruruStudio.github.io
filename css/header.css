@@ -1,0 +1,65 @@
+html, body{
+  font-family: "Rounded Mplus 1c";
+  background-image: linear-gradient(-90deg, #B9C4B1, #E0BDBE);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 4%;
+  background-color: #4b4838;
+  padding: 2px 0px 2px 0px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header_item{
+  font-size: 0.8em;
+  margin: 0px 10px 0px 10px;
+  padding: 0px 6px 0px 6px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  animation: header_item_anim 400ms linear;
+}
+
+.main {
+  text-align: center;
+  position: absolute;
+  top: 4%;
+  height: 96%;
+  width: 100%;
+}
+
+@keyframes header_item_anim {
+  from {
+    max-width: 0px;
+    opacity: 0;
+  }
+  27% {
+    opacity: 0;
+  }
+  to {
+    max-width: 100px;
+    opacity: 1;
+  }
+}
