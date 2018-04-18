@@ -1,0 +1,76 @@
+html, body {
+  margin: 0;
+  overflow: hidden;
+  padding: 8;
+  animation: bodyAnim 0s 2.45s forwards;
+}
+
+#content {
+  opacity: 0;
+  animation: contentAnim 1s 1.45s forwards;
+}
+
+.logo {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: logoAnim 1s .45s forwards;
+}
+
+.logoText {
+  font-family: 'Dosis', sans-serif;
+  border: 3px solid #00b7ff;
+  color: #00b7ff;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  z-index: 10;
+  display:inline-block;
+  top: 0;
+  height: 4%;
+  margin: 10px 10px 10px 10px;
+  padding: 2px 2px 2px 2px;
+}
+
+.flex {
+  display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes logoAnim {
+  from {
+    width: 100%;
+  }
+  
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes bodyAnim {
+  from {
+    overflow: hidden;
+  }
+
+  to {
+    overflow: auto;
+  }
+}
+
+@keyframes contentAnim {
+  from {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+  }
+  
+  to {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
