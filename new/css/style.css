@@ -1,7 +1,6 @@
 html, body {
   margin: 0;
   overflow: hidden;
-  padding: 8;
   animation: bodyAnim 0s 2.45s forwards;
 }
 
