@@ -18,9 +18,10 @@ html, body {
   animation: logoAnim 1s .45s forwards;
 }
 
-.logoText {
+.headerItem {
   font-family: 'Dosis', sans-serif;
   border: 3px solid #00b7ff;
+  font-size: 1.3em;
   color: #00b7ff;
   text-transform: uppercase;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -47,7 +48,7 @@ html, body {
   }
   
   to {
-    width: 40%;
+    width: 50%;
   }
 }
 
