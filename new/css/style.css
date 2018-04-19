@@ -24,7 +24,7 @@ hr {
   width: 70%;
   text-align: center;
   margin: 0 auto;
-  border: solid 2px #9be6ff;
+  border: solid 2px #ffffff;
   border-radius: 3px;
 }
 
@@ -35,6 +35,7 @@ hr {
 
 .header {
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -48,9 +49,9 @@ hr {
 .headerItem {
   cursor: pointer;
   font-family: 'Dosis', sans-serif;
-  border: 3px solid #c1eeff;
+  border: 3px solid #ffffff;
   font-size: 1.3em;
-  color: #c1eeff;
+  color: #ffffff;
   text-transform: uppercase;
   -webkit-font-smoothing: subpixel-antialiased;
   z-index: 10;
