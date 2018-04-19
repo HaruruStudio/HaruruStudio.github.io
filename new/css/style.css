@@ -1,7 +1,31 @@
 html, body {
   margin: 0;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   animation: bodyAnim 0s 2.45s forwards;
+  background-image: url('../img/harurustudio_transparent_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+hr {
+ color: rgba(0, 0, 0, 0.8);
+ background-color: rgba(0, 0, 0, 0.8);
+}
+
+.center {
+  text-align: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 8px;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  border: solid 2px #9be6ff;
+  border-radius: 3px;
 }
 
 #content {
@@ -24,17 +48,23 @@ html, body {
 .headerItem {
   cursor: pointer;
   font-family: 'Dosis', sans-serif;
-  border: 3px solid #00b7ff;
+  border: 3px solid #c1eeff;
   font-size: 1.3em;
-  color: #00b7ff;
+  color: #c1eeff;
   text-transform: uppercase;
   -webkit-font-smoothing: subpixel-antialiased;
   z-index: 10;
-  display:inline-block;
+  border-radius: 2px;
+  display:inline-lock;
   top: 0;
   height: 2%;
   margin: 10px 10px 10px 10px;
   padding: 2px 2px 2px 2px;
+}
+
+
+.headerItem:hover {
+  box-shadow: 0 0 45px #d7f5ff;
 }
 
 .flex {
