@@ -1,4 +1,5 @@
 html, body {
+  font-family: 'Dosis', sans-serif;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -14,24 +15,47 @@ hr {
  background-color: rgba(0, 0, 0, 0.8);
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .center {
   text-align: center;
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 8px;
   width: 70%;
   text-align: center;
   margin: 0 auto;
-  border: solid 2px #ffffff;
+  border: solid 10px #fff;
   border-radius: 3px;
+}
+
+.itemCard {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 8px;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  border: solid 10px #fff;
+  border-radius: 3px;
+  margin: 2%;
+  transition: .05s;
+}
+
+.itemCard:hover {
+  transform: scale(1.1);
+  transition: .1s;
 }
 
 #content {
   opacity: 0;
   margin: 0 auto;
-  animation: contentAnim .3s 1.45s forwards;
+  text-align: center;
+  animation: contentAnim .3s .9s forwards;
 }
 
 .header {
@@ -39,12 +63,16 @@ hr {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.itemContainer {
+  margin: 50px;
+}
+
 .logo {
   width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  animation: logoAnim 1s .45s forwards;
+  animation: logoAnim 0.5s .5s forwards;
 }
 
 .headerItem {
@@ -78,6 +106,26 @@ hr {
   flex-direction: row;
 }
 
+.mainItem {
+  display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 380px) {
+  .mainItem {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .headerItem {
     font-size: 1.0em;
@@ -92,7 +140,7 @@ hr {
 
 @keyframes logoAnim {
   from {
-    width: 100%;
+    width: 80%;
   }
   
   to {
