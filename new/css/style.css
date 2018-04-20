@@ -4,7 +4,7 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  animation: bodyAnim 0s 2.45s forwards;
+  animation: bodyAnim 0s 2.85s forwards;
   background-image: url('../img/harurustudio_transparent_bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,7 +56,7 @@ a {
   opacity: 0;
   margin: 0 auto;
   text-align: center;
-  animation: contentAnim .3s .9s forwards;
+  animation: contentAnim .3s 1.2s forwards;
 }
 
 .header {
@@ -73,7 +73,7 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  animation: logoAnim .5s .5s forwards;
+  animation: logoAnim .5s .8s forwards;
 }
 
 .headerItem {
