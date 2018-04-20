@@ -8,11 +8,12 @@ html, body {
   background-image: url('../img/harurustudio_transparent_bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 hr {
- color: rgba(0, 0, 0, 0.8);
- background-color: rgba(0, 0, 0, 0.8);
+ color: rgba(0, 0, 0, .8);
+ background-color: rgba(0, 0, 0, .8);
 }
 
 a {
@@ -25,7 +26,7 @@ a {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, .4);
   padding: 8px;
   width: 70%;
   text-align: center;
@@ -35,7 +36,7 @@ a {
 }
 
 .itemCard {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, .4);
   padding: 8px;
   width: 70%;
   text-align: center;
@@ -60,7 +61,7 @@ a {
 
 .header {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, .3);
 }
 
 .itemContainer {
@@ -72,7 +73,7 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  animation: logoAnim 0.5s .5s forwards;
+  animation: logoAnim .5s .5s forwards;
 }
 
 .headerItem {
@@ -82,7 +83,6 @@ a {
   font-size: 1.3em;
   color: #ffffff;
   text-transform: uppercase;
-  -webkit-font-smoothing: subpixel-antialiased;
   z-index: 10;
   border-radius: 2px;
   display:inline-lock;
@@ -104,6 +104,14 @@ a {
 	display: -o-flex;
   display: flex;
   flex-direction: row;
+}
+
+.left {
+  text-align: left;
+}
+
+.black {
+  color: black;
 }
 
 .mainItem {
